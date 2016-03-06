@@ -21,8 +21,14 @@ defmodule Ai.Layer do
 
     neurons = Agent.get(pid, &(&1))[:neurons]
 
-    for neuron <- neurons do
-      Ai.Neuron.calculate(neuron, data)
+    workers = for neuron <- neurons do
+      Task.async(fn() ->
+        Ai.Neuron.calculate(neuron, data)
+      end)
+    end
+
+    for worker <- workers do
+      Task.await(worker)
     end
 
   end
