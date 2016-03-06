@@ -1,0 +1,27 @@
+v2.
+{<<"_build/dev/lib/ai/ebin/Elixir.Ai.Layer.beam">>,'Elixir.Ai.Layer',module,
+ <<"lib/ai_layer.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,'Elixir.Agent','Elixir.Access','Elixir.Range','Elixir.Ai.Neuron'],
+ [],nil}.
+{<<"_build/dev/lib/ai/ebin/Elixir.MyEnum.beam">>,'Elixir.MyEnum',module,
+ <<"lib/my_enum.ex">>,
+ ['Elixir.Kernel'],
+ [erlang],
+ [],nil}.
+{<<"_build/dev/lib/ai/ebin/Elixir.Ai.NeuralNetwork.beam">>,
+ 'Elixir.Ai.NeuralNetwork',module,<<"lib/ai_neural_network.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,'Elixir.String.Chars','Elixir.Ai.Layer','Elixir.Agent',
+  'Elixir.Access','Elixir.Enum','Elixir.Range','Elixir.IO','Elixir.MyEnum'],
+ [],nil}.
+{<<"_build/dev/lib/ai/ebin/Elixir.Ai.Neuron.beam">>,'Elixir.Ai.Neuron',module,
+ <<"lib/ai_neuron.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,'Elixir.Agent','Elixir.Access','Elixir.Ai',math],
+ [],nil}.
+{<<"_build/dev/lib/ai/ebin/Elixir.Ai.beam">>,'Elixir.Ai',module,
+ <<"lib/ai.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,crypto,'Elixir.Enum','Elixir.Range'],
+ [],nil}.
